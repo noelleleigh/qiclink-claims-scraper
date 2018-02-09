@@ -117,8 +117,8 @@ const getLinksFromTable = async (table) => {
 }
 
 /**
- * Download the file at `url` to the current working dir as `filename`. Use `cookies` if necessary
- * to access resource
+ * Download the file at `url` to the current working directory as `filename`, using binary encoding.
+ * Use `cookies` if necessary to access resource.
  * @param {string} url
  * @param {string} filename
  * @param {Object[]} cookies - Array of objects containing `name` and `value` properties
@@ -157,6 +157,8 @@ const main = async () => {
   await goToClaimsPage(page)
   const tableHandle = await loadClaimsTable(page, process.env.startDate, process.env.endDate)
   const links = await getLinksFromTable(tableHandle, page, browser)
+  console.log(`${links.length} claim${links.length > 1 ? 's' : ''} found.`)
+  console.log('Beginning download...')
   // Strategy: https://github.com/GoogleChrome/puppeteer/issues/299#issuecomment-330623847
   const cookies = await page.cookies()
   for (let link of links) {
