@@ -1,6 +1,8 @@
 # qiclink-claims-scraper
 
-Command-line tool for bulk-downloading your insurance claims from a QicLink Benefits Exchange website.
+Command-line tool for bulk-downloading your insurance claims from a
+[QicLink Benefits Exchange](http://www.trizetto.com/PayerSolutions/CoreAdministration/QicLink/ConstituentPortal/)
+website.
 
 I wanted to download my insurance claims from my employer, but I wasn't interested in clicking on
 each redirection link and and manually downloading and naming each file individually, so I wrote a
