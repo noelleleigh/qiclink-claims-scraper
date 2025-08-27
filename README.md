@@ -1,3 +1,5 @@
+**[Moved to Sourcehut](https://git.sr.ht/~noelle/qiclink-claims-scraper)**
+
 # qiclink-claims-scraper
 
 Command-line tool for bulk-downloading your insurance claims from a
